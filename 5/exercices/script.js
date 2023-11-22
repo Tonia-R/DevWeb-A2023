@@ -80,7 +80,7 @@ Depuis index.html:
 
 12. Donnez un texte à ce bouton grâce à l'attribut "value".
 
-13. Utilisez l'attribut "onclick" pour déclencher une alerte dans votre navigateur (Une alerte peut être déclenchée grâce à la fonction alert("un texte..."), essayez!) 
+13. Utilisez l'attribut "onclick" aapour déclencher une alerte dans votre navigateur (Une alerte peut être déclenchée grâce à la fonction alert("un texte..."), essayez!) 
 
 Depuis script.js:
 
