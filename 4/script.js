@@ -64,16 +64,91 @@ Ajoutez à la page index.html, grâce au Javascript
 
 */
 
+// 1. LINK
+
+let myLink = document.createElement("a");
+myLink.setAttribute("href","https://ch.ch");
+myLink.innerHTML="CLICK HERE FOR WWW.CH.CH";
+myLink.classList.add('couleurRouge');
+document.body.appendChild(myLink);
+
+// 2. IMAGE
+
+let myImage = document.createElement("img");
+myImage.setAttribute("src","https://cdn.theatlantic.com/media/mt/science/assets_c/2012/05/lolcat-crocs-thumb-615x446-86738.jpg");
+myImage.setAttribute("width","500");
+myImage.setAttribute("height","400");
+myImage.setAttribute("alt","lolcat");
+document.body.appendChild(myImage);
+
+// 3. PARAGRAPH CONTAINING PHRASE
+
+let myParagraph = document.createElement("p");
+myParagraph.innerHTML="I hate COVID.";
+myParagraph.classList.add("inBlue");
+document.body.appendChild(myParagraph);
+
+// 4. <BR>
+
+let myLinebreak = document.createElement("br");
+document.body.appendChild(myLinebreak);
+
+// 5. BACKGROUND COLOUR TO RED
+
+document.body.style.backgroundColor = "lightGreen";
+
+// CORRECTION!
+// let body = document.querySelector("body");
+// body.style.backgroundColor = "green";
+
+
+// 6. ADD CLASS ".inBlue" to CSS FILE
+
+/* .inBlue{
+        color: blue;
+} */
+
+// 7. LINK .INBLUE to <P>
+
+// myParagraph.classList.add("inBlue");
+
+// 8. ADD LIST <UL> WITH 2x <LI> CONTAINING TEXT
+
+let myList = document.createElement("ul");
+let item1 = document.createElement("li");
+let item2 = document.createElement("li");
+item1.innerHTML="COFFEE";
+item1.classList.add("inBlue");
+item2.innerHTML="CREAM";
+item2.classList.add("inBlue");
+document.body.appendChild(myList);
+myList.appendChild(item1);
+myList.appendChild(item2);
+
+
 /* APPLICATION DE VOS CONNAISSANCES II
 
 Sur la page de l'UNIL, via la console, utilisez les connaissances acquises jusqu'à présent (et la méthode length, sur laquelle vous allez vous renseigner) pour :
 
 9. compter le nombre de liens sur la page
+
+document.querySelectorAll("a").length
+120
+
 10. compter le nombre d'images sur la page
+
+document.querySelectorAll("img").length
+18
 
 Puis
 
 11. ajoutez une image de votre choix (cf. ci-dessus) au bas de la page
+
+document.querySelectorAll("img").length
+18
+That means an image added would be number 19
+
+
 12. ajoutez un paragraphe de votre choix tout de suite après le div avec l'id "follow-hp" en vous servant de .querySelector() pour attraper le bon élément
 13. lancez-vous un autre défi !
 
